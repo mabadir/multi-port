@@ -7,10 +7,12 @@ import (
 )
 
 func handlePort8080(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Received request on port 8080")
 	fmt.Fprintf(w, "Hello from port 8080!")
 }
 
 func handlePort8081(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Received request on port 8081")
 	fmt.Fprintf(w, "Hello from port 8081!")
 }
 
