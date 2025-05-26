@@ -30,7 +30,7 @@ func main() {
 
 	// Start server on port 8080 in a goroutine
 	go func() {
-		log.Printf("Server starting on port 8080...")
+		log.Printf("Server starting on port 8080..")
 		if err := server8080.ListenAndServe(); err != nil {
 			log.Printf("Error starting server on port 8080: %v", err)
 		}
